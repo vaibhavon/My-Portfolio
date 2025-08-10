@@ -1,0 +1,504 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    /* background-color: #f1f9f2; */
+    background: linear-gradient(to bottom, #EDF4E9, #E6F0E2, #E2EEDC);
+
+    font-family: 'Inter', sans-serif;
+}
+
+/* HEADER */
+header {
+    background-color: #44e38e;
+    width: 100%;
+    height: 30px;
+    font-size: larger;
+    padding-top: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+#fline {
+    display: flex;
+    justify-content: right;
+    gap: 50px;
+    padding-right: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.line1:hover {
+    color: white;
+    transform: translateY(-1px);
+    border-bottom: 2px solid whitesmoke;
+}
+
+
+/* SECTION  - 1    */
+#section1 {
+    width: 100%;
+    height: 42em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#artic1 {
+    width: 40%;
+}
+
+.fname {
+    width: 40%;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 1px darkgray;
+}
+
+.fname1,
+.fname2 {
+    color: black;
+    width: 40%;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 4px white;
+}
+
+aside {
+    width: 30%;
+}
+
+aside .vimg {
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    /* border: 20ps solid white; */
+    box-shadow: 0 0 15px 15px black;
+    animation: vaiimg 3s linear 1;
+}
+
+@keyframes vaiimg {
+    0% {
+        transform: scale(0.4);
+    }
+
+    50% {
+        transform: scale(0.7);
+
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+}
+
+.mword {
+    font-size: x-large;
+}
+
+
+.bword {
+    font-size: 40px;
+    color: #44e38e;
+}
+
+/* SECTION  - 2    */
+#section2 {
+    background-image: linear-gradient(40deg, rgba(61, 174, 61, 0.558) 10%, #44e38e 90%);
+    height: 42em;
+    display: flex;
+    padding-top: 100px;
+    justify-content: space-around;
+}
+
+.aboutv {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hone {
+    color: #3BB273;
+}
+
+.box {
+    background-color: whitesmoke;
+    width: 34em;
+    height: 5em;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 1px black;
+
+}
+
+.box:hover {
+    box-shadow: inset 5px 6px 15px darkgray;
+}
+
+/* SECTION  - 3    */
+
+#section3 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#project1 {
+    width: 30%;
+    height: 80vh;
+    padding: 10px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 8px 2px darkgray;
+
+}
+
+#project1:hover,
+.part2:hover {
+    box-shadow: inset 5px 6px 10px lightgray;
+}
+
+#section3>h1 {
+    display: none;
+}
+
+#semipoj {
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#project2 {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.part2 {
+    width: 47%;
+    height: 30vh;
+    background-color: whitesmoke;
+    text-align: center;
+    box-shadow: 5px 5px 8px 2px darkgray;
+    padding-top: 50px;
+}
+
+.hone1 {
+    font-size: 32px;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px darkgray;
+}
+
+/* Section-4  (skills)*/
+#section4 {
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skill-list {
+    width: 50%;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.skill-list li {
+    font-size: 20px;
+    font-weight: 600;
+    list-style: none;
+
+}
+
+meter {
+    width: 90%;
+    height: 7%;
+    color: #ffa37f;
+}
+
+.arrow {
+    padding-top: 40px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: right;
+    text-shadow: 2px 1px 4px white;
+}
+
+.arrow:hover {
+    text-shadow: 2px 2px 1px white;
+}
+
+/* Section-5 (contact me)  */
+
+#contact-me {
+    color: whitesmoke;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(40deg, rgba(51, 170, 51, 0.733) 10%, #44e38e 90%);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.text-info {
+    color: black;
+    padding-left: 50px;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+i {
+    width: 2.5%;
+    height: 20%;
+    border-radius: 50%;
+    background-color: #E2EEDC;
+    text-align: center;
+}
+
+.res-d {
+    margin-left: 10px;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    background-color: #44e38e;
+    border: 0;
+    box-shadow: 3px 3px 5px 2px black;
+}
+
+.res-d:hover {
+    cursor: pointer;
+    box-shadow: inset 2px 2px 5px black;
+}
+
+@media screen and (max-width:480px) {
+
+
+    body {
+        font-size: 13px;
+    }
+
+    #fline {
+        justify-content: space-evenly;
+        gap: 0;
+        padding-right: 0;
+    }
+
+    #section1 {
+        width: 100%;
+        height: 60vh;
+        justify-content: space-evenly;
+        align-items: normal;
+        flex-direction: column;
+    }
+
+    #artic1 {
+        width: 100%;
+        height: 150px;
+    }
+
+
+    .mword {
+        padding-left: 10px;
+        font-size: 18px;
+    }
+
+    .fname {
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 0;
+    }
+
+    .bword {
+        padding-right: 10px;
+        font-size: 20px;
+        text-align: end;
+        font-weight: 600;
+    }
+
+    aside{
+        width: 100%;
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         background-color: #44e38e;
+    }
+    aside .vimg {
+        width: 200px;
+        height: 90%;
+        box-shadow: 0 0 0 0 white;
+
+        border: 5px solid white;
+    }
+
+
+    .fname1 {
+        padding-left: 10px;
+        width: 90%;
+        font-size: 28px;
+    }
+
+
+
+    .vimg {
+        width: 100px;
+        height: 100px;
+    }
+
+    #section2 {
+        padding: 0;
+        height: 100vh;
+        flex-direction: column;
+        align-items: normal;
+        justify-content: space-evenly;
+        padding-top: 20px;
+    }
+
+    .aboutv {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box {
+        height: 120px;
+        width: 28em;
+        line-height: 25px;
+    }
+
+    #section3 {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 60px;
+
+    }
+
+    #semipoj {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .hone1 {
+        padding-left: 10px;
+        width: 98%;
+    }
+
+    #project1 {
+        width: 90%;
+        height: 60%;
+        line-height: 20px;
+    }
+
+    #project2 {
+        align-items: flex-start;
+    }
+
+    .part2 {
+        width: 42%;
+        height: 22vh;
+        text-align: left;
+        align-items: normal;
+        line-height: 20px;
+        padding-left: 10px;
+    }
+
+    #section4 {
+        width: 97%;
+        flex-direction: column;
+        justify-content: normal;
+        gap: 40px;
+        padding-top: 80px;
+
+    }
+
+    .skill-list {
+        padding-left: 40px;
+        gap: 50px;
+    }
+
+
+    .meter {
+        /*   dout */
+        width: 100%;
+        height: 80%;
+    }
+
+    #contact-me {
+        height: 31vh;
+        padding-top: 10px;
+        flex-direction: row;
+    }
+
+    .fname2 {
+        width: 50%;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+
+    .text-info {
+        padding-left: 0;
+    }
+
+    .text-info:nth-child(1) {
+        padding-left: 10px;
+        width: 80%;
+        line-height: 50px;
+    }
+
+    .text-info:nth-child(2) {
+        /*   dout */
+        padding-left: 10px;
+        width: 25%;
+    }
+
+    .text-info>p {
+        width: 85%;
+        font-size: 18px;
+    }
+
+    /* p:nth-child(3) {
+        font-size: 12px;
+    } */
+
+    .res-d {
+        width: 40%;
+    }
+
+    .wp-logo {
+        height: 100px;
+        display: flex;
+        gap: 10px;
+    }
+
+    i {
+        width: 17%;
+        height: 22%;
+    }
+}
