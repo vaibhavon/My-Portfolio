@@ -351,9 +351,7 @@ i {
     aside .vimg {
         width: 200px;
         height: 90%;
-        box-shadow: 0 0 0 0 white;
-
-        border: 5px solid white;
+        box-shadow: 0 0 15px 10px #E2EEDC;
     }
 
 
@@ -501,4 +499,5 @@ i {
         width: 17%;
         height: 22%;
     }
+
 }
